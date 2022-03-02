@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/main.ts",
+    "build": "tsc",
+    "live": "node build/main.js",
+    "typeorm": "node --loader ts-node/esm ./node_modules/typeorm/cli.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@influxdata/influxdb-client": "^1.23.0",
+    "@influxdata/influxdb-client-apis": "^1.23.0",
+    "dotenv": "^16.0.0",
+    "fastify": "^3.27.2",
+    "fastify-cors": "^6.0.3",
+    "fastify-formbody": "^5.2.0",
+    "fastify-swagger": "^4.15.0",
+    "mqtt": "^4.3.6",
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.44"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "ts-node": "^10.6.0",
+    "typescript": "^4.5.5"
+  }
+}

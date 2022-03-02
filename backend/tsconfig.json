@@ -1,0 +1,32 @@
+
+{
+    "compilerOptions": {
+      "experimentalDecorators": true,
+  //    "strict": true,
+  //    "noImplicitAny": true,
+  //    "strictNullChecks": true,
+      "downlevelIteration": true,
+      "forceConsistentCasingInFileNames": true,
+      "moduleResolution": "node",
+      "composite": true,
+      "module": "commonjs",
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "target": "es6",
+      "rootDir": "./src",
+      "outDir": "./build",
+      "removeComments": true,
+      "sourceMap": false,
+      "emitDecoratorMetadata": true,
+    },
+    "exclude": [
+      "node_modules",
+      "./**/*.spec.ts",
+      "./**/*.test.ts",
+      "./**/__tests__/*.ts"
+    ],
+    "include": [
+      "./**/*.ts"
+    ]
+  }
+  
