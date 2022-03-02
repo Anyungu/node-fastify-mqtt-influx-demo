@@ -1,10 +1,7 @@
 # If you had more time and resources, how would you improve this feature/process?
-
+Not in any particular order ...
 ## caching
 Setting up caching to reduce some request times, especially for data that rarely changes. Updating caches in the background can be helpful.
-
-## asynch
-Move full code to async pattern
 
 ## Testing
 Addittion of High coverage unit and integration testing
@@ -28,7 +25,12 @@ use buiding tools to generate prod level builds
 ## Better Migration management
 Have migrations that don't syncronize with any entity changes
 
+## async
+Move full code to async pattern
 
+## separate environments (dev/test/prod)
+
+## Add Github deployment worflows for CI/CD and dockerfiles
 
 # Can you think of a way to tackle the problem our users have from another direction or with a different approach?
 

@@ -1,4 +1,4 @@
-import { Point, FluxTableMetaData } from "@influxdata/influxdb-client";
+import { Point } from "@influxdata/influxdb-client";
 import { getUser } from ".";
 import { influxInstance } from "../../../main";
 import { DeviceBrokerData } from "../../../models/data-models";
@@ -24,7 +24,7 @@ export const saveInfluxIotData = (data: DeviceBrokerData) => {
 
 export const getUserCompanyInfluxData = async () => {
   const fluxQuery = `from(bucket:"${process.env.INFLUX_BUCKET}") 
-        |> range(start: -2000m) 
+        |> range(start: -15m) 
         |> group()
         |> filter(fn: (r) => r["_measurement"] == "ccm") 
         |> filter(fn: (r) => r["_field"] == "energyMeter" or r["_field"] == "fieldTemperature" or r["_field"] == "roomHumidity" or r["_field"] == "roomTemperature")

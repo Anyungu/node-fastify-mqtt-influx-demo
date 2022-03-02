@@ -51,3 +51,7 @@ The UI dashboard can be found here:http://localhost:3000
 ## Challenges Experienced
 + Flux query Language in custom aggregation is not easy to understand
 + Broken Broker. The MQTT Broker broke and was sometimes being misused.
+
+
+## Responses to Questions
+Please see responses [here](/docs/Answers.md)
